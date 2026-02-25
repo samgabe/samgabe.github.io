@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam Dev Builds - Full-Stack Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .tech-badge {
+            transition: all 0.2s ease;
+        }
+
+        .tech-badge:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-200">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 hero-gradient rounded-lg flex items-center justify-center">
+                        <i class="fas fa-code text-white"></i>
+                    </div>
+                    <span class="font-bold text-xl">Sam Dev Builds</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-purple-600 transition">Home</a>
+                    <a href="#projects" class="text-gray-700 hover:text-purple-600 transition">Projects</a>
+                    <a href="#skills" class="text-gray-700 hover:text-purple-600 transition">Skills</a>
+                    <a href="#experience" class="text-gray-700 hover:text-purple-600 transition">Experience</a>
+                    <a href="#contact" class="text-gray-700 hover:text-purple-600 transition">Contact</a>
+                </div>
+                <button class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-20 min-h-screen flex items-center">
+        <div class="container mx-auto px-6 py-20">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                        Hi, I'm <span class="gradient-text">Sam Dev Builds</span>
+                    </h1>
+                    <h2 class="text-2xl md:text-3xl text-gray-700 mb-6">
+                        Full-Stack Developer & Cybersecurity Consultant
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-8">
+                        A tech enthusiast passionate about building innovative, scalable solutions that solve real-world
+                        problems. Based in Kenya, I specialize in modern web technologies and have extensive experience
+                        delivering production-ready applications for clients across various industries.
+                    </p>
+                    <div class="flex flex-wrap gap-4 mb-8">
+                        <a href="#contact"
+                            class="bg-purple-600 text-white px-8 py-3 rounded-lg hover:bg-purple-700 transition">
+                            Get In Touch
+                        </a>
+                        <a href="#projects"
+                            class="border border-purple-600 text-purple-600 px-8 py-3 rounded-lg hover:bg-purple-50 transition">
+                            View Projects
+                        </a>
+                    </div>
+                    <div class="flex space-x-6">
+                        <a href="https://github.com/samgabe" target="_blank"
+                            class="text-gray-600 hover:text-purple-600 transition">
+                            <i class="fab fa-github text-2xl"></i>
+                        </a>
+                        <a href="https://master--samkktechnologies.netlify.app/" target="_blank"
+                            class="text-gray-600 hover:text-purple-600 transition">
+                            <i class="fas fa-globe text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-purple-600 transition">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="w-full h-96 hero-gradient rounded-2xl flex items-center justify-center">
+                        <div class="text-white text-center">
+                            <i class="fas fa-code text-6xl mb-4"></i>
+                            <p class="text-xl">Building Tomorrow's Solutions, Today!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-4">Featured Projects</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                A selection of my best work showcasing diverse technologies and industries
+            </p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Farm Pro Suite -->
+                <div class="card-hover bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
+                        <i class="fas fa-seedling text-white text-4xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Farm Pro Suite</h3>
+                        <p class="text-gray-600 mb-4">Complete agricultural management system with ML integration for
+                            crop predictions and farm optimization.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="tech-badge px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Flutter</span>
+                            <span class="tech-badge px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">Vue
+                                3</span>
+                            <span
+                                class="tech-badge px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">Go</span>
+                            <span
+                                class="tech-badge px-3 py-1 bg-red-100 text-red-700 rounded-full text-sm">FastAPI</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/samgabe/Farm-Pro-Mobile" target="_blank"
+                                class="text-gray-600 hover:text-purple-600">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="text-gray-600 hover:text-purple-600">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Churchrly Platform -->
+                <div class="card-hover bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
+                        <i class="fas fa-church text-white text-4xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Churchrly Platform</h3>
+                        <p class="text-gray-600 mb-4">Church administration and community management system with mobile
+                            app and web dashboard.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="tech-badge px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-sm">Kotlin</span>
+                            <span class="tech-badge px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">Vue
+                                3</span>
+                            <span
+                                class="tech-badge px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">Go</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/samgabe/Churchrly-Mobile-App" target="_blank"
+                                class="text-gray-600 hover:text-purple-600">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="text-gray-600 hover:text-purple-600">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Luna Interiors -->
+                <div class="card-hover bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
+                        <i class="fas fa-home text-white text-4xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Luna Interiors</h3>
+                        <p class="text-gray-600 mb-4">Interior design management platform with role-based access control
+                            and modern UI/UX.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tech-badge px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">Vue
+                                3</span>
+                            <span
+                                class="tech-badge px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">Go</span>
+                            <span
+                                class="tech-badge px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">TailwindCSS</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/samgabe/LunaInterior-Frontend" target="_blank"
+                                class="text-gray-600 hover:text-purple-600">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="text-gray-600 hover:text-purple-600">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Staffpoint System -->
+                <div class="card-hover bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-indigo-400 to-indigo-600 flex items-center justify-center">
+                        <i class="fas fa-users text-white text-4xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Staffpoint System</h3>
+                        <p class="text-gray-600 mb-4">Modern HR and staff management solution with intuitive interface
+                            and robust backend.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="tech-badge px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">Vue
+                                3</span>
+                            <span
+                                class="tech-badge px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">Go</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/samgabe/Staffpoint-Frontend" target="_blank"
+                                class="text-gray-600 hover:text-purple-600">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="text-gray-600 hover:text-purple-600">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Credit Score System -->
+                <div class="card-hover bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-yellow-400 to-yellow-600 flex items-center justify-center">
+                        <i class="fas fa-chart-line text-white text-4xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Credit Score System</h3>
+                        <p class="text-gray-600 mb-4">ML-powered financial scoring system with advanced analytics and
+                            accurate credit assessments.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="tech-badge px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">FastAPI</span>
+                            <span
+                                class="tech-badge px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-sm">Python</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/samgabe/Credit-Score-System" target="_blank"
+                                class="text-gray-600 hover:text-purple-600">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="text-gray-600 hover:text-purple-600">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ML Service -->
+                <div class="card-hover bg-white rounded-xl border border-gray-200 overflow-hidden">
+                    <div class="h-48 bg-gradient-to-br from-red-400 to-red-600 flex items-center justify-center">
+                        <i class="fas fa-brain text-white text-4xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">ML Service for Farm Pro</h3>
+                        <p class="text-gray-600 mb-4">Machine learning service providing crop predictions and farming
+                            recommendations using advanced algorithms.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span
+                                class="tech-badge px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">FastAPI</span>
+                            <span
+                                class="tech-badge px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">TensorFlow</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/samgabe/Machine-Learning-Service-for-Farm-Pro" target="_blank"
+                                class="text-gray-600 hover:text-purple-600">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="text-gray-600 hover:text-purple-600">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-4">Technical Skills</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                Comprehensive expertise across modern development technologies
+            </p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 hero-gradient rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-laptop-code text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-3">Frontend</h3>
+                    <ul class="text-gray-600 space-y-1">
+                        <li>Vue.js 3</li>
+                        <li>Flutter</li>
+                        <li>Kotlin</li>
+                        <li>TailwindCSS</li>
+                    </ul>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 hero-gradient rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-server text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-3">Backend</h3>
+                    <ul class="text-gray-600 space-y-1">
+                        <li>Go (Golang)</li>
+                        <li>Python/FastAPI</li>
+                        <li>Node.js</li>
+                        <li>REST APIs</li>
+                    </ul>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 hero-gradient rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-mobile-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-3">Mobile</h3>
+                    <ul class="text-gray-600 space-y-1">
+                        <li>Flutter</li>
+                        <li>Kotlin</li>
+                        <li>Progressive Web Apps</li>
+                        <li>Cross-Platform</li>
+                    </ul>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 hero-gradient rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-brain text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-3">ML/AI</h3>
+                    <ul class="text-gray-600 space-y-1">
+                        <li>FastAPI</li>
+                        <li>TensorFlow</li>
+                        <li>Data Processing</li>
+                        <li>Model Integration</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-4">Industry Experience</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                Successfully delivered solutions across multiple sectors
+            </p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="text-center p-6 border border-gray-200 rounded-lg">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-seedling text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Agriculture Tech</h3>
+                    <p class="text-gray-600">Farm management systems with ML-powered crop predictions and optimization
+                    </p>
+                </div>
+
+                <div class="text-center p-6 border border-gray-200 rounded-lg">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-church text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Church Management</h3>
+                    <p class="text-gray-600">Community administration platforms with mobile and web solutions</p>
+                </div>
+
+                <div class="text-center p-6 border border-gray-200 rounded-lg">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-home text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Interior Design</h3>
+                    <p class="text-gray-600">Design management platforms with e-commerce capabilities</p>
+                </div>
+
+                <div class="text-center p-6 border border-gray-200 rounded-lg">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-users text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">HR Management</h3>
+                    <p class="text-gray-600">Staff management systems with real-time data processing</p>
+                </div>
+
+                <div class="text-center p-6 border border-gray-200 rounded-lg">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-chart-line text-yellow-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Financial Tech</h3>
+                    <p class="text-gray-600">Credit scoring systems with advanced ML algorithms</p>
+                </div>
+
+                <div class="text-center p-6 border border-gray-200 rounded-lg">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shield-alt text-red-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Cybersecurity</h3>
+                    <p class="text-gray-600">Security consulting and implementation for robust applications</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-4">Get In Touch</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                Available for freelance projects, consulting, and collaboration opportunities
+            </p>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="font-bold mb-4">Let's Work Together</h3>
+                            <p class="text-gray-600 mb-6">
+                                Whether you need a full-stack application, mobile development, or cybersecurity
+                                consulting,
+                                I'm here to help bring your vision to life.
+                            </p>
+                            <div class="space-y-4">
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-envelope text-purple-600"></i>
+                                    <span>Available upon request</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-map-marker-alt text-purple-600"></i>
+                                    <span>Kenya (Remote work available globally)</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-clock text-purple-600"></i>
+                                    <span>Response within 24 hours</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="font-bold mb-4">Services Offered</h3>
+                            <div class="space-y-3">
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                    <span>Full-stack application development</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                    <span>Mobile app development</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                    <span>API and backend services</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                    <span>Machine learning integration</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <i class="fas fa-check-circle text-green-500"></i>
+                                    <span>Cybersecurity consulting</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 pt-8 border-t border-gray-200">
+                        <div class="flex justify-center space-x-6">
+                            <a href="https://github.com/samgabe" target="_blank"
+                                class="text-gray-600 hover:text-purple-600 transition">
+                                <i class="fab fa-github text-2xl"></i>
+                            </a>
+                            <a href="https://master--samkktechnologies.netlify.app/" target="_blank"
+                                class="text-gray-600 hover:text-purple-600 transition">
+                                <i class="fas fa-globe text-2xl"></i>
+                            </a>
+                            <a href="#" class="text-gray-600 hover:text-purple-600 transition">
+                                <i class="fab fa-linkedin text-2xl"></i>
+                            </a>
+                            <a href="#" class="text-gray-600 hover:text-purple-600 transition">
+                                <i class="fab fa-twitter text-2xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Sam Dev Builds. Building tomorrow's solutions, today!</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile menu toggle (simplified)
+        const mobileMenuButton = document.querySelector('button.md\\:hidden');
+        if (mobileMenuButton) {
+            mobileMenuButton.addEventListener('click', () => {
+                // Mobile menu implementation would go here
+                console.log('Mobile menu clicked');
+            });
+        }
+    </script>
+</body>
+
+</html>
